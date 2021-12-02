@@ -1,0 +1,280 @@
+{
+
+    "platform": {
+        "label": "Platform",
+        "type": "dropdown",
+        "value": "origin",
+        "options": {
+            "origin": "Origin",
+            "psn": "PSN",
+            "xbl": "Xbox Live"
+        },
+        "group": "Tracker Network Config"
+    },
+    "userId": {
+        "type": "text",
+        "label": "Origin ID / Xbox Live gamertag / PSN ID",
+        "value": "",
+        "group": "Tracker Network Config"
+    },
+    "trnApiKey": {
+        "type": "password",
+        "label": "TRN-Api-Key",
+        "value": "",
+        "group": "Tracker Network Config"
+    },
+    "updateRefreshRate": {
+        "type": "number",
+        "label": "Update rate in seconds (2 minimum)",
+        "value": 10,
+        "group": "Tracker Network Config"
+    },
+    "testMode": {
+        "type": "checkbox",
+        "label": "Enable Test Mode",
+        "group": "Tracker Network Config"
+    },
+    "testButton": {
+        "type": "button",
+        "label": "Apply",
+        "value": "lol",
+        "group": "Tracker Network Config"
+    },
+
+    "displayStyle": {
+        "label": "Display Style",
+        "type": "dropdown",
+        "value": "column",
+        "options": {
+            "column": "Column",
+            "row": "Row"
+        },
+        "group": "Display"
+    },
+    "displayImg": {
+        "label": "Display Rank Image",
+        "type": "dropdown",
+        "value": "inline-flex",
+        "options": {
+            "inline-flex": "Yes",
+            "none": "No"
+        },
+        "group": "Rank Image"
+    },
+    "imgAlignment": {
+        "label": "Text Alignment",
+        "type": "dropdown",
+        "value": "center",
+        "options": {
+            "flex-start": "Start",
+            "center": "Center",
+            "flex-end": "End"
+        },
+        "group": "Rank Image"
+    },
+
+    "displayValue": {
+        "label": "Display Rank",
+        "type": "dropdown",
+        "value": "inline-flex",
+        "options": {
+            "inline-flex": "Yes",
+            "none": "No"
+        },
+        "group": "Rank Value"
+    },
+    "valueLocation": {
+        "type": "dropdown",
+        "label": "Rank Location",
+        "value": "3",
+        "options": {
+            "0": "Top",
+            "1": "Middle-Top",
+            "3": "Middle-Bottom",
+            "4": "Bottom"
+        },
+        "group": "Rank Value"
+    },
+    "valueAlignment": {
+        "label": "Text Alignment",
+        "type": "dropdown",
+        "value": "center",
+        "options": {
+            "flex-start": "Start",
+            "center": "Center",
+            "flex-end": "End"
+        },
+        "group": "Rank Value"
+    },
+    "valueColor": {
+        "label": "Color",
+        "type": "colorpicker",
+        "value": "#ffffff",
+        "group": "Rank Value"
+    },
+    "valueFontName": {
+        "label": "Font Name",
+        "type": "googleFont",
+        "value": "Roboto",
+        "group": "Rank Value"
+    },
+    "valueFontSize": {
+        "label": "Font Size",
+        "type": "number",
+        "value": 48,
+        "group": "Rank Value"
+    },
+    "valueFontWeight": {
+        "label": "Font Weight",
+        "type": "dropdown",
+        "value": "400",
+        "options": {
+            "100": "Thin (100)",
+            "300": "Light (300)",
+            "400": "Regular (400)",
+            "500": "Medium (500)",
+            "700": "Bold (700)",
+            "900": "Black (900)"
+        },
+        "group": "Rank Value"
+    },
+    "valueTextTransform": {
+        "label": "Text Transform",
+        "type": "dropdown",
+        "value": "Capitalize",
+        "options": {
+            "capitalize": "Capitalize",
+            "lowercase": "lowercase",
+            "none": "None",
+            "uppercase": "UPPERCASE"
+        },
+        "group": "Rank Value"
+    },
+    "valueShadowH": {
+        "label": "Shadow Horizontal Position",
+        "type": "number",
+        "value": 0,
+        "group": "Rank Value"
+    },
+    "valueShadowV": {
+        "label": "Shadow Vertical Position",
+        "type": "number",
+        "value": 0,
+        "group": "Rank Value"
+    },
+    "valueShadowB": {
+        "label": "Shadow Blur",
+        "type": "number",
+        "value": 0,
+        "group": "Rank Value"
+    },
+    "valueShadowColor": {
+        "label": "Shadow Color",
+        "type": "colorpicker",
+        "value": "#000000",
+        "group": "Rank Value"
+    },
+
+
+    "displayPercentile": {
+        "label": "Display Percentile",
+        "type": "dropdown",
+        "value": "inline-flex",
+        "options": {
+            "inline-flex": "Yes",
+            "none": "No"
+        },
+        "group": "Rank Percentile"
+    },
+    "percentileLocation": {
+        "type": "dropdown",
+        "label": "Percentile Location",
+        "value": "4",
+        "options": {
+            "0": "Top",
+            "1": "Middle-Top",
+            "3": "Middle-Bottom",
+            "4": "Bottom"
+        },
+        "group": "Rank Percentile"
+    },
+    "percentileAlignment": {
+        "label": "Text Alignment",
+        "type": "dropdown",
+        "value": "center",
+        "options": {
+            "flex-start": "Start",
+            "center": "Center",
+            "flex-end": "End"
+        },
+        "group": "Rank Percentile"
+    },
+    "percentileColor": {
+        "label": "Color",
+        "type": "colorpicker",
+        "value": "#ffffff",
+        "group": "Rank Percentile"
+    },
+    "percentileFontName": {
+        "label": "Font Name",
+        "type": "googleFont",
+        "value": "Roboto",
+        "group": "Rank Percentile"
+    },
+    "percentileFontSize": {
+        "label": "Font Size",
+        "type": "number",
+        "value": 48,
+        "group": "Rank Percentile"
+    },
+    "percentileFontWeight": {
+        "label": "Font Weight",
+        "type": "dropdown",
+        "value": "400",
+        "options": {
+            "100": "Thin (100)",
+            "300": "Light (300)",
+            "400": "Regular (400)",
+            "500": "Medium (500)",
+            "700": "Bold (700)",
+            "900": "Black (900)"
+        },
+        "group": "Rank Percentile"
+    },
+    "percentileTextTransform": {
+        "label": "Text Transform",
+        "type": "dropdown",
+        "value": "Capitalize",
+        "options": {
+            "capitalize": "Capitalize",
+            "lowercase": "lowercase",
+            "none": "None",
+            "uppercase": "UPPERCASE"
+        },
+        "group": "Rank Percentile"
+    },
+    "percentileShadowH": {
+        "label": "Shadow Horizontal Position",
+        "type": "number",
+        "value": 0,
+        "group": "Rank Percentile"
+    },
+    "percentileShadowV": {
+        "label": "Shadow Vertical Position",
+        "type": "number",
+        "value": 0,
+        "group": "Rank Percentile"
+    },
+    "percentileShadowB": {
+        "label": "Shadow Blur",
+        "type": "number",
+        "value": 0,
+        "group": "Rank Percentile"
+    },
+    "percentileShadowColor": {
+        "label": "Shadow Color",
+        "type": "colorpicker",
+        "value": "#000000",
+        "group": "Rank Percentile"
+    }
+}

@@ -1,0 +1,59 @@
+body {
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#container {
+    display: flex;
+    flex-direction: {{displayStyle}};
+    align-items: center;
+    justify-content: center;
+    height: 300px;
+    width: 300px;
+}
+
+#div-rank-img {
+	align-self: {{imgAlignment}};    
+    order: 3;
+}
+
+#div-rank-value {
+    display: {{displayValue}};
+    align-self: {{valueAlignment}};
+    
+    order: {{valueLocation}};
+}
+
+#rank-value {
+    text-transform: {{valueTextTransform}};
+	color: {{valueColor}};
+	font-family: '{{valueFontName}}', sans-serif;
+	font-size: {{valueFontSize}}px;
+	font-weight: {{valueFontWeight}};
+	text-shadow: {{valueShadowH}}px {{valueShadowV}}px {{valueShadowB}}px {{valueShadowColor}};
+}
+
+#div-rank-percentile {
+    display: {{displayPercentile}};
+    align-self: {{percentileAlignment}};
+    
+    order: {{percentileLocation}};
+}
+
+#rank-percentile {
+    text-transform: {{percentileTextTransform}};
+	color: {{percentileColor}};
+	font-family: '{{percentileFontName}}', sans-serif;
+	font-size: {{percentileFontSize}}px;
+	font-weight: {{percentileFontWeight}};
+	text-shadow: {{percentileShadowH}}px {{percentileShadowV}}px {{percentileShadowB}}px {{percentileShadowColor}};
+}
