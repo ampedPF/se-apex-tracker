@@ -6,7 +6,7 @@ let el_rank_img, el_rank_value, el_rank_percentile;
 let rank_img, rank_value, rank_percentile;
 
 function refreshData() {
-    //console.log("refreshing token...");
+    console.log("refreshData...");
     var http = new XMLHttpRequest();
     var url = 'https://public-api.tracker.gg/v2/apex/standard/profile/' + fieldData.platform + "/" + fieldData.userId;
     http.open('GET', url, true);
@@ -25,13 +25,14 @@ function refreshData() {
             if (new_rank_value != rank_value) {
                 rank_value = new_rank_value;
                 rank_img = res.data.segments[0].stats.rankScore.metadata.iconUrl;
-                //rank_rankName = res.data.segments[0].stats.rankScore.metadata.rankName;
                 rank_percentile = res.data.segments[0].stats.rankScore.percentile;
                 updateDisplay();
             }
+            setTimeout(refreshData, updateRefreshRate * 1000);
         }
     }
     http.send();
+
 }
 
 function updateDisplay() {
@@ -44,7 +45,7 @@ function main() {
     el_rank_img = document.getElementById("rank-img");
     el_rank_value = document.getElementById("rank-value");
     el_rank_percentile = document.getElementById("rank-percentile");
-    setTimeout(refreshData, updateRefreshRate * 1000);
+    refreshData();
 }
 
 /* Button clicked */
@@ -65,6 +66,8 @@ window.addEventListener('onWidgetLoad', function (obj) {
     }
     if (fieldData.updateRefreshRate < 2) {
         updateRefreshRate = 2;
+    } else {
+        updateRefreshRate = fieldData.updateRefreshRate;
     }
     main();
 });
