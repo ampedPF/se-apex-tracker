@@ -1,6 +1,6 @@
-# APEX Tracker
+# APEX Legends Tracker
 A StreamElements' custom widget to display your current rank on APEX Legends.
-
+![example](example.png)
 ## Retrieve Tracker Network
 1. Login and find your profile on [tracker.gg/](https://apex.tracker.gg/)
 2. Create an app on [Tracker Network Developers' Dashboard](https://tracker.gg/developers/docs/getting-started) to have your `API Key`.
