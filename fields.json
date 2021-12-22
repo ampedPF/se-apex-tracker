@@ -1,5 +1,17 @@
 {
 
+    "testMode": {
+        "type": "checkbox",
+        "label": "Enable Test Mode",
+        "group": "Test Mode"
+    },
+    "testButton": {
+        "type": "button",
+        "label": "Apply",
+        "value": "lol",
+        "group": "Test Mode"
+    },
+
     "platform": {
         "label": "Platform",
         "type": "dropdown",
@@ -19,7 +31,7 @@
     },
     "trnApiKey": {
         "type": "password",
-        "label": "TRN-Api-Key",
+        "label": "TRN API Key",
         "value": "",
         "group": "Tracker Network Config"
     },
@@ -27,17 +39,6 @@
         "type": "number",
         "label": "Update rate in seconds (2 minimum)",
         "value": 10,
-        "group": "Tracker Network Config"
-    },
-    "testMode": {
-        "type": "checkbox",
-        "label": "Enable Test Mode",
-        "group": "Tracker Network Config"
-    },
-    "testButton": {
-        "type": "button",
-        "label": "Apply",
-        "value": "lol",
         "group": "Tracker Network Config"
     },
 
