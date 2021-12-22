@@ -1,4 +1,4 @@
-# Apex Tracker
+# APEX Tracker
 A StreamElements' custom widget to display your current rank on APEX Legends.
 
 ## Retrieve Tracker Network
